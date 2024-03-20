@@ -27,8 +27,8 @@ def n():
     date=input("Введите дату:")
     day, month, year = map(int, date.split("."))
     if day*month == int(str(year)[-2:]):
-        return True
+        return 'Дата является магической'
     else:
-        return False
+        return 'Дата не является магической'
 print(n())
 
