@@ -1,0 +1,58 @@
+def task1():
+    m = [25, 63, 75, 84, 93]
+    number = int(input("Введите число: "))
+    if number in m:
+        print(f"Исходный список: {m} ")
+        print(f'Число {number} есть в списке. Поздравляю, вы угадали число!')
+    else:
+        print("Исходный список: ")
+        print(f'Числа {number} нет в списке :(')
+task1()
+def a(number1):
+    c = 0
+    spisok = []
+    for i in number1:
+        if number1.count(i) > 1:
+            c += 1
+            spisok.append(i)
+    return spisok
+
+
+number1 = [35, 44, 85, 44, 34, 89, 90]
+k = a(number1)
+if len(k) > 0:
+    print("Есть повторяющиеся числа: ", k)
+else:
+    print("Повторяющихся чисел нет")
+a(number1)
+
+def task3():
+    day = ('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье')
+    col = int(input('Сколько выходных дней Вы хотите? '))
+    weekends = day[-col:]
+    workday = day[:-col]
+    print("Ваши выходные дни: ", weekends)
+    print("Ваши рабочие дни: ", workday)
+task3()
+
+def task4():
+    group25 = ('Токарева', 'Гусева', 'Екимова', 'Зайцев', 'Карпенко', 'Зотова', 'Овчинников', 'Петров', 'Иванов', 'Попов')
+    group20 = ('Белкина', 'Казарян', 'Богданчук', 'Иванов', 'Решетников', 'Левченко', 'Малкиель', 'Федоров', 'Романов',
+               'Козодерова')
+    sport = tuple(group20[0:4] + group25[3:9])
+    print("25 group", group25)
+    print("20 group", group20)
+    print("Спортивная группа", sport)
+
+    print("Количество человек в спортивный группе", len(sport))
+
+    sport1=sorted(sport)
+    print("Сортировка по алфавиту спортивной группы: ", sport1)
+
+    name="Иванов"
+    count_name=sport.count(name)
+    if count_name>0:
+        print(f'{name} есть в команде и встречается {count_name} раз')
+    else:
+        print(f'{name} не входит в спортивную команду')
+task4()
