@@ -1,5 +1,5 @@
 def task1 ():
-with open('C:\Рабочий стол\"product.json"') as f:
+with open("product.json") as f:
     products = json.load(f)
 for product in products['product']:
     print(f"Название: {product['name']}")
@@ -13,7 +13,7 @@ for product in products['product']:
 task1()
 
 def task2 ():
-    with open('C:\Рабочий стол\"product.json"') as f:
+    with open("product.json") as f:
         products = json.load(f)
     for product in products['product']:
         print(f"Название: {product['name']}")
