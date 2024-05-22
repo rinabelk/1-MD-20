@@ -22,7 +22,7 @@ resta1 = Restaurant("Токио Сити", "кухни всех видов")
 resta2 = Restaurant("ДедХо", "въетнамская")
 resta3 = Restaurant("Korean", "корейская")
 
-# Вызываем для каждого экземпляра метод describe_restaurant()
+
 resta1.describe_restaurant()
 resta2.describe_restaurant()
 resta3.describe_restaurant()
